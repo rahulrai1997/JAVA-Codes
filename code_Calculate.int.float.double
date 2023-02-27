@@ -1,4 +1,3 @@
-/*Write a program in java to add two integers , two floats , 1int and 1 float, 1 int , 1 flaot and 1 double . Create a class calculate to perform the above stated function using overloading, name the overloaded function as add. */
 public class Calculate {
     public int add(int a, int b) {
         return a + b;
