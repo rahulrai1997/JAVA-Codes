@@ -1,0 +1,34 @@
+/*Write a program in java to add two integers , two floats , 1int and 1 float, 1 int , 1 flaot and 1 double . Create a class calculate to perform the above stated function using overloading, name the overloaded function as add. */
+public class Calculate {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public float add(float a, float b) {
+        return a + b;
+    }
+
+    public float add(int a, float b) {
+        return a + b;
+    }
+
+    public double add(int a, float b, double c) {
+        return a + b + c;
+    }
+
+    public static void main(String[] args) {
+        Calculate obj = new Calculate();
+
+        int sum1 = obj.add(10, 20);
+        System.out.println("Sum of two integers: " + sum1);
+
+        float sum2 = obj.add(2.5f, 3.5f);
+        System.out.println("Sum of two floats: " + sum2);
+
+        float sum3 = obj.add(5, 3.2f);
+        System.out.println("Sum of an int and a float: " + sum3);
+
+        double sum4 = obj.add(5, 3.2f, 1.6);
+        System.out.println("Sum of an int, a float, and a double: " + sum4);
+    }
+}
